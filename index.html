@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<title>Index</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col"></div>
+				<div id="app" class="col-12 col-md-6"></div>
+				<div class="col"></div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.1/umd/react.production.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.1/umd/react-dom.production.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flux/2.1.1/Flux.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/EventEmitter/5.0.0/EventEmitter.js"></script>
+		<script src="https://cdn.rawgit.com/facebook/flux/master/dist/FluxUtils.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.4.0/redux.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.7/react-redux.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.2/immutable.min.js"></script>
+
+
+		<script> window.App = {} </script>
+		
+		<!-- Flux -->
+		<!-- <script type="text/babel" src="./dispatcher/AppDispatcher.jsx"></script> -->
+		<script type="text/babel" src="./constants/ActionTypes.jsx"></script>
+		<script type="text/babel" src="./actions/TodoActions.jsx"></script>
+		<!-- <script type="text/babel" src="./stores/TodoStore.jsx"></script> -->
+
+		<!-- Redux -->
+		<script type="text/babel" src="./reducers/index.jsx"></script>
+		<script type="text/babel" src="./reducers/todos.jsx"></script>
+
+		<!-- React -->
+		<script type="text/babel" src="./components/TodoItem.jsx"></script>
+		<script type="text/babel" src="./components/TodoHeader.jsx"></script>
+		<script type="text/babel" src="./components/TodoList.jsx"></script>
+		<script type="text/babel" src="./components/InputField.jsx"></script>
+		<script type="text/babel" src="./components/TodoApp.jsx"></script>
+
+		<script type="text/babel" src="./main.jsx"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</body>
+</html>
