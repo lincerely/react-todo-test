@@ -4,7 +4,7 @@
  *
  * Distributed under terms of the MIT license.
  */
-const { createStore, combineReducers, applyMiddleware } = Redux;
+const { createStore, combineReducers, applyMiddleware, compose } = Redux;
 const { Provider } = ReactRedux;
 const { TodoApp, reducers } = window.App;
 
@@ -21,7 +21,13 @@ const thunkMiddleware = ({ dispatch, getState }) => {
 };
 
 const composedReducer = combineReducers(reducers);
-const store = createStore(composedReducer, applyMiddleware(thunkMiddleware));
+const composedEnhancers =  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+	composedReducer,
+	composedEnhancers(
+		applyMiddleware(thunkMiddleware)
+	)
+);
 
 ReactDOM.render(
 	<Provider store={store}>
